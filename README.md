@@ -1,40 +1,17 @@
-# Welcome to Remix!
+# Inventory Tracker (Front-End)
 
-- 📖 [Remix docs](https://remix.run/docs)
+This React Remix application provides a user interface for tracking inventory items as the pass through a computer vision camera on a conveyor belt.
 
-## Development
+## Features
 
-Run the dev server:
+- **Real-time Inventory Count:** Displays a live count of items detected by the camera.
+- **Historical Log:** Records a timestamped log of item detections for reference.
 
-```shellscript
-npm run dev
-```
+## Prerequisites
 
-## Deployment
+- **Back-end API:** Assumes the existence of a back-end APU to handle:
 
-First, build your app for production:
+  - Communication with the computer vision system
+  - Storage of inventory logs
 
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+- **Node.js and npm:** For package management.

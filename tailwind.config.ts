@@ -1,9 +1,17 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { nextui } = require("@nextui-org/react");
 import type { Config } from "tailwindcss";
 
 export default {
-  content: ["./app/**/*.{js,jsx,ts,tsx}"],
+  mode: "jit",
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+  
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [nextui()],
 } satisfies Config;
